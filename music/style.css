@@ -1,0 +1,62 @@
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #0ca120;  
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+.music-player{
+    background-color: #061f03;
+    border: 1px solid #05fd43;
+    border-radius: 20px;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 2);
+    display: flex;
+    align-items: center;
+    width: 300px;
+    animation: audio-visualization 2s linear infinite;
+}
+@keyframes audio-visualization {
+    0% {
+      background-color: #333;
+    }
+    50% {
+      background-color: #024b12;
+    }
+    100% {
+      background-color: #050000;
+    }
+  }
+.album-cover img{
+    width:100px ;
+    height: 100px;
+    border-radius: 10%;
+    margin-right: 10px;
+}
+.music-details{
+    flex-grow: 1;
+}
+audio{
+    width: 100%;
+    margin-top:10px ;
+    border-radius: 15px;
+}
+audio::-webkit-media-controls{
+    background-color: rgb(247, 247, 232);
+}
+audio::-webkit-media-controls-play-button,
+audio::-webkit-media-controls-pause-button{
+    font-size: 24px;
+}
+.music-details h2{
+    font-size: 18px;
+    margin: 0;
+    color: antiquewhite;
+}
+.music-details p{
+    font-size: 14px;
+    color: #888;
+    margin: 0;
+}
